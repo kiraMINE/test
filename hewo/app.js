@@ -4,6 +4,12 @@ var favicon = require('serve-favicon');
 var logger = require('morgan');
 var cookieParser = require('cookie-parser');
 var bodyParser = require('body-parser');
+var join = require('path').join;
+//var h337 = require ('heatmap');
+var fs = require('fs');
+var cv = require('comma-separated-values');
+var csv = require('csv');
+var http = require('http');
 
 var index = require('./routes/index');
 var users = require('./routes/users');
@@ -25,6 +31,12 @@ app.use(express.static(path.join(__dirname, 'public')));
 app.use('/', index);
 app.use('/users', users);
 
+
+app.use('/', function(req, res) {
+	var essai= '343';
+    res.render('views/index', {essai:essai});
+});
+
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
   var err = new Error('Not Found');
@@ -43,4 +55,11 @@ app.use(function(err, req, res, next) {
   res.render('error');
 });
 
+
+
+
+
 module.exports = app;
+
+app.listen(3000);
+
