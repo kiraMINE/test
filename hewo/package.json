@@ -14,7 +14,18 @@
     "morgan": "~1.7.0",
     "serve-favicon": "~2.3.0",
     "csv":"~1.1.0",
-    "heatmap": "~0.0.5",
-    "node-csv": "~0.1.0"
+    "csv-to-array": "~1.0.0",
+    "d3 ":"~4.0.0",
+    "leaflet":"~1.0.0",
+    "xmlhttprequest ":"~1.8.0",
+    "request": "latest",
+    "grunt":"~1.0.0",
+    "dbscan": "~0.0.1",
+    "ml-distance":"~2.0.0",
+    "beefy":"~2.1.1",
+    "browserify":"~14.0.0",
+    "circle-enclose":"~1.0.0",
+    "density-clustering":"~1.0.0"
+    
   }
 }
