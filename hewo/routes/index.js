@@ -18,7 +18,7 @@ var clustering = require('density-clustering');
 var Distance 	 = require("distance");
 var enclose = require('circle-enclose');
 var distances    = new Distance();
-var dbscan = new clustering.OPTICS();
+var dbscan = new clustering.DBSCAN();
 
 var args = process.argv;
 var type = args[2] || 'text';
